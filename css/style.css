@@ -1,0 +1,58 @@
+body {
+  background-color: #ECE5CE;
+  font-family: 'Dancing Script', cursive;
+  color: #774F38;
+}
+
+
+header {
+  background-color: #F1D4AF;
+  height: 70px;
+  text-align: center;
+  font-family: 'Kaushan Script', cursive;
+  font-size: 24px;
+  margin-top: -10px;
+  margin-right: -10px;
+  padding-top: 0px;
+  border: 2px solid #C5E0DC;
+}
+
+.top {
+  padding-top: 1%;
+}
+
+.sidebar-left {
+  height: 800px;
+  width: 25%;
+  background-color: #C5E0DC;
+  float: left;
+}
+
+.addAndClear {
+  margin: 20px;
+  float: left;
+}
+
+.addToDo {
+  padding-top: 20px;
+  padding-bottom: 20px;
+}
+
+button {
+  background-color: #E08E79;
+  color:  #ECE5CE;
+  border-color: #ECE5CE;
+  font-family: 'Kaushan Script';
+  font-size: 15px;
+  border: none;
+}
+
+input {
+  font-family: 'Kaushan Script';
+  font-size: 15px;
+}
+
+.main {
+  padding-top: 40px;
+}
+
