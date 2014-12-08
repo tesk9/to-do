@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title>To Do List</title>
+  <link href='http://fonts.googleapis.com/css?family=Dancing+Script:400,700|Kaushan+Script' rel='stylesheet' type='text/css'>
+  <link type="text/css" href="css/style.css" rel="stylesheet">
+
+</head>
+<body>
+  <script src="js/jquery-1.11.1.min.js"></script>
+  <script src="js/handlebars-v1.3.0.js"></script>
+
+  <header><div class="top">To Do List</div></header>
+
+  <div class="sidebar-left">
+    <div class="addAndClear">
+      <div class="addToDo">
+          <input id="newToDo" type="text" placeholder="New To-Do">
+          <button id="saveToDo">Save To-Do</button>
+          <br>
+          <label><input type="checkbox" id="private">Private</label>
+      </div>
+
+      <br>
+        <button id="clearDone">Clear Accomplished Tasks</button>
+      <br>
+    </div>
+  </div>
+
+  <div class="main">
+    <script id="list" type="text/x-handlebars-template">
+      <table>
+        <tbody>
+          {{#todos}}
+          <tr class="checkboxes" >
+            <td><input type="checkbox" data-id='{{item}}' {{done}}/></td>
+            <td>{{item}}</td>
+          </tr>
+          {{/todos}}
+        </tbody>
+      </table>
+    </script>
+  </main>
+
+  <script src="js/toDo.js"></script>
+
+
+</body>
+</html>
